@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: hsl(0, 0%, 95%);
+}
+
+.container {
+  margin: auto;
+  display: grid;
+  grid-template-areas:
+    "a a b"
+    "c d d"
+    "c e e";
+  gap: 10px;
+  margin-top: 15em;
+  background-color: black;
+  padding: 3em;
+}
+.red {
+  background-color: red;
+  grid-area: a;
+  height: 13vh;
+}
+.yellow {
+  background-color: yellow;
+  grid-area: b;
+}
+
+.green {
+  background-color: green;
+  grid-area: c;
+  height: 15vh;
+}
+.blue1 {
+  background-color: blue;
+  grid-area: d;
+  height: 7vh;
+}
+
+.blue2 {
+  grid-area: e;
+  height: 7vh;
+  background-color: blue;
+}
+
+button {
+  margin: 30px;
+  padding: 15px 20px;
+  border: 0;
+  background-color: blue;
+  border-radius: 35px;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 200;
+  font-size: 12px;
+  color: white;
+}
